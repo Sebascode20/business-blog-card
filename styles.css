@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato";
+  font-size: 16px;
+  background-color: #f2f5f9;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.author-info {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 16px;
+  color: rgb(55, 65, 81);
+}
+
+.author-info a {
+  color: rgb(55, 65, 81);
+  text-decoration: underline;
+}
+
+.card {
+  max-width: 26.25em;
+  margin: auto;
+  margin-top: 30px;
+  position: relative;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.card__content {
+  padding-inline: 2em;
+}
+
+.card__content-title {
+  margin-top: 0;
+  font-family: "Poppins";
+  font-size: 1.5em;
+  font-weight: 500;
+  letter-spacing: -1px;
+  color: #111729;
+}
+
+.card__content-text {
+  margin-bottom: 1.5em;
+  font-size: 1em;
+  color: #4a5567;
+  text-wrap: pretty;
+  line-height: 1.5;
+}
+
+.card__content hr {
+  margin-inline: -2em;
+  color: #f2f5f9;
+  opacity: 0.1;
+}
+
+.card__hero-image img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card__hero-image + img {
+  position: absolute;
+  top: 13.375em;
+  right: 0.125em;
+}
+
+.card__author-info {
+  padding-block: 2.5em;
+}
+
+.card__author-info p {
+  position: absolute;
+}
+
+.card__author-info picture + p {
+  top: 28.188em;
+  left: 5em;
+  color: #111729;
+  font-weight: bold;
+}
+
+.card__author-info picture + p + p {
+  top: 29.5em;
+  left: 5em;
+  color: #4a5567;
+  font-weight: 400;
+}
+
+.avatar-image img {
+  position: absolute;
+  width: 35px;
+  top: 29.375em;
+  border-radius: 50%;
+  aspect-ratio: 1;
+}
