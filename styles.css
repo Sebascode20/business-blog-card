@@ -25,10 +25,11 @@ img {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   max-width: 26.25em;
   margin: auto;
-  margin-top: 30px;
-  position: relative;
+  margin-top: 10px;
   background-color: #fff;
   border-radius: 12px;
 }
@@ -61,42 +62,46 @@ img {
 }
 
 .card__hero-image img {
+  width: 100%;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
 
 .card__hero-image + img {
   position: absolute;
-  top: 13.375em;
-  right: 0.125em;
+  width: 100%;
+  bottom: -1px;
+}
+
+.card__image-container {
+  position: relative;
+}
+
+.card__image-container, .card__image-container img {
+  display: block;
 }
 
 .card__author-info {
-  padding-block: 2.5em;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  align-items: end;
+  padding: 25px 5px;
 }
 
-.card__author-info p {
-  position: absolute;
-}
-
-.card__author-info picture + p {
-  top: 28.188em;
-  left: 5em;
+.person-info > p {
+  margin: 0;
   color: #111729;
   font-weight: bold;
 }
 
-.card__author-info picture + p + p {
-  top: 29.5em;
-  left: 5em;
+.person-info > p + p {
   color: #4a5567;
   font-weight: 400;
 }
 
 .avatar-image img {
-  position: absolute;
   width: 35px;
-  top: 29.375em;
   border-radius: 50%;
   aspect-ratio: 1;
 }
