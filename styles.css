@@ -7,6 +7,13 @@ body {
   background-color: #f2f5f9;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 92vh;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -28,8 +35,6 @@ img {
   display: flex;
   flex-direction: column;
   max-width: 26.25em;
-  margin: auto;
-  margin-top: 10px;
   background-color: #fff;
   border-radius: 12px;
 }
